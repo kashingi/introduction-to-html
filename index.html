@@ -59,13 +59,14 @@
                     <th>Email</th>
                     <th>Contact</th>
                     <th>Password</th>
+                    <th>Education</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Paul</td>
                     <td>paulkarisa@gmail.com</td>
-                    <td>0712345678</td>
+                    <td rowspan="2">0712345678</td>
                     <td>123456</td>
                 </tr>
                 <tr>
@@ -90,9 +91,15 @@
             <input type="number" name="contact"> <br>
             <label for="password">Password</label><br>
             <input type="password" name="password" required>
+            <label for="male">Male</label>
+            <input type="radio" name="male">
+            <label for="female">Female</label>
+            <input type="radio" name="female">
+
             <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
-        <button type="submit">Submit</button>
+
         <footer>
 
         </footer>
