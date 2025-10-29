@@ -1,7 +1,32 @@
+* {
+    margin: 0.5%;
+}
 body {
     background: blue;
 }
-h2{
+h1, h2, h3, h4, h5, h6{
     background: red;
     color: blueviolet;
+}
+div > p {
+    font-size: larger;
+}
+h2:hover {
+    font-size: 56px;
+}
+div header .heading {
+    color: black;
+}
+div header .paragraph {
+    color: rgb(206, 168, 168);
+}
+.strike {
+    color: green;
+}
+div header nav {
+    display: flex;
+    color: black;
+}
+div header nav li{
+    width: 80px;
 }
