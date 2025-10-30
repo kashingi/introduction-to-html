@@ -2,10 +2,14 @@
     margin: 0.5%;
 }
 body {
-    background: blue;
+    background-color: chartreuse;
+    background-image: url(./img/Code\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 h1, h2, h3, h4, h5, h6{
-    background: red;
+    background-color: hsl(hue, saturation, lightness);
     color: blueviolet;
 }
 div > p {
