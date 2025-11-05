@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: hsl(hue, saturation, lightness);
     color: blueviolet;
 }
+
 div > p {
     font-size: larger;
 }
@@ -28,9 +29,31 @@ div header .paragraph {
     color: green;
 }
 div header nav {
+    width: 840px;
+    height: 40px;
+    margin: 10px 160px;
+    padding: 8px 4px;
+    justify-content: center;
+    background: white;
     display: flex;
-    color: black;
+    border: 2px solid brown;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px gray;
+    text-shadow: 2px 2px 5px black;
 }
 div header nav li{
     width: 80px;
+    list-style: none;
+}
+div header nav li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2.4;
+    letter-spacing: 2.8px;
+
 }
