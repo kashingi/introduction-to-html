@@ -1,6 +1,7 @@
 * {
     margin: 0.5%;
 }
+
 body {
     background-color: chartreuse;
     background-image: url(./img/Code\ \(2\).jpg);
@@ -8,26 +9,37 @@ body {
     background-size: contain;
     background-position: center;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     background-color: hsl(hue, saturation, lightness);
     color: blueviolet;
 }
 
-div > p {
+div>p {
     font-size: larger;
 }
+
 h2:hover {
     font-size: 56px;
 }
+
 div header .heading {
     color: black;
 }
+
 div header .paragraph {
     color: rgb(206, 168, 168);
 }
+
 .strike {
     color: green;
 }
+
 div header nav {
     width: 840px;
     height: 40px;
@@ -42,10 +54,12 @@ div header nav {
     box-shadow: 5px 5px 10px gray;
     text-shadow: 2px 2px 5px black;
 }
-div header nav li{
+
+div header nav li {
     width: 120px;
     list-style: none;
 }
+
 div header nav li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
@@ -57,17 +71,86 @@ div header nav li a {
     letter-spacing: 2.8px;
 
 }
+
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
+
 .grid-container .grid-item {
-  background: lightcoral;
-  padding: 10px;
-  position: relative;
-  top: 15%;
-  left: 3%;
-  width: 30vw;
-  height: 24rem;
+    background: lightcoral;
+    padding: 10px;
+    position: relative;
+    top: 15%;
+    left: 3%;
+    width: 30vw;
+    height: 24rem;
+}
+
+.floating-property p {
+    float: right;
+    margin: 20px 40px;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    position: absolute;
+    top: 55%;
+    width: 80vw;
+}
+
+.container .item {
+    background-color: lightcoral;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    /* Each box takes equal width */
+}
+
+@media (max-width: 768px) {
+    div header nav {
+        width: 400px;
+        height: 30px;
+        margin: 5px 60px;
+        padding: 2px 1px;
+        justify-content: center;
+        font-size: 10px;
+        background: white;
+        display: inline-flex;
+        border: 2px solid brown;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 5px gray;
+        text-shadow: 2px 2px 5px black;
+    }
+}
+
+@media (max-width: 480px) {
+    div header nav {
+        width: 280px;
+        height: 20px;
+        padding: 1px 1px;
+        justify-content: center;
+        background: white;
+        display: inline-flex;
+        border: 1px solid brown;
+        border-radius: 5px;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px gray;
+        text-shadow: 2px 2px 5px black;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div header nav li a {
+        font-size: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+
+    }
 }
